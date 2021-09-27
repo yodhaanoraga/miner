@@ -1,6 +1,6 @@
 {
-  "name": "arionum/miner",
-  "description": "A PHP miner for the Arionum cryptocurrency.",
+  "name": "gaman/miner",
+  "description": "A PHP based miner for the Gaman blockchain.",
   "type": "library",
   "license": "MIT",
   "require": {
