@@ -1,7 +1,7 @@
 #!/usr/bin/php
 <?php
 
-namespace Arionum\Miner;
+namespace Gaman\Miner;
 
 error_reporting(0);
 ini_set("memory_limit", "5G");
@@ -21,7 +21,7 @@ class Miner
     /**
      * The current version of the miner.
      */
-    public const VERSION = 'v0.4a';
+    public const VERSION = 'v0.1';
     /**
      * The mode name for pool mining.
      */
@@ -141,7 +141,7 @@ For Pool mining: ./miner pool <pool-address> <your-address>\n\n";
             // Check address validity
             $dst_b = $this->base58Decode($public_key);
             if (strlen($dst_b) != 64) {
-                die("ERROR: Invalid Arionum address!");
+                die("ERROR: Invalid Gaman address!");
             }
         }
 
@@ -431,8 +431,8 @@ For Pool mining: ./miner pool <pool-address> <your-address>\n\n";
     public function outputHeader()
     {
         echo "######################\n";
-        echo "# Arionum Miner ".self::VERSION." #\n";
-        echo "# www.arionum.com    #\n";
+        echo "# Gaman Miner ".self::VERSION." #\n";
+        echo "# www.gaman.web.id    #\n";
         echo "######################\n\n";
     }
 }
